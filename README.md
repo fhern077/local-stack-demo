@@ -10,6 +10,8 @@ Dependencies:
 ## More info
 
 - Based on https://dev.to/goodidea/how-to-fake-aws-locally-with-localstack-27me
+- localstack: https://github.com/localstack/localstack
+- tutroials: https://lobster1234.github.io/2017/04/05/working-with-localstack-command-line/
 
 ## To get started
 
