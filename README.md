@@ -25,4 +25,8 @@ Bucket Creation
 create a bucket
 aws --endpoint-url=http://localhost:4572 s3 mb s3://demo-bucket
 aws --endpoint-url=http://localhost:4572 s3api put-bucket-acl --bucket demo-bucket --acl public-read
+
+Easy way 
+yarn localstack:init or npm run localstack:init
+yarn start or npm run start
 ```
