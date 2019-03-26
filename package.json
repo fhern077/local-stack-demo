@@ -1,0 +1,20 @@
+{
+  "name": "localstack_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "localstack:init": "npm run localstack:up && npm run localstack:config",
+    "localstack:up": "docker-compose up -d",
+    "localstack:config": "aws --endpoint-url=http://localhost:4572 s3 mb s3://demo-bucket && aws --endpoint-url=http://localhost:4572 s3api put-bucket-acl --bucket demo-bucket --acl public-read",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.429.0",
+    "dotenv": "^7.0.0"
+  }
+}
