@@ -6,7 +6,7 @@ const credentials = {
   secretAccessKey: process.env.AWS_SECRET_KEY,
   s3BucketEndpoint: true
 };
-
+console.log("hello");
 const useLocal = process.env.NODE_ENV !== "production";
 
 const bucketName = process.env.AWS_BUCKET_NAME;
